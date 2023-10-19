@@ -1,25 +1,24 @@
 ---
-title: 关于
+title: About
 date: 2023-07-16 15:54:03
 ---
 
-## 我是谁
+## Who am I
 
-你好，我是[您的名字]。我是一名[您的职业或身份]，热爱[您的兴趣爱好或专业领域]。我在这里分享我的经验和见解，也希望能够与更多人交流和学习。
+Hi, I'm FunFun. I'm a fullstack programmer with a passion for programming, food, and travel and e-commerce. I'm here to share my experience and insights and hope to connect and learn from as many people as possible.
 
-## 我的经历
+## My experience
 
-我在[您的教育背景或工作经验]方面有着丰富的经验。在这段时间里，我学到了很多，也遇到了很多挑战。但正是这些经历让我成长并塑造了我的个性和价值观。
+When you are deep in every field, you will always meet some people and encounter some things. These people, these things will make us feel that it is too much of a pity to be dispersed with the wind, so be it. In a quiet corner, leave some traces. Looking forward to the arrival of a person of destiny, get what you need. Also let these people, these things in the memory of more people.
 
-## 我的使命
+## My mission
 
-我相信[您的信念或价值观]是我们每个人都应该追求的。我的使命是通过我的工作和生活方式来实现这些价值观，并帮助更多的人找到自己的使命和价值。
+I believe that people are born free. I believe that knowledge has value only when it is diffused. This is what we should all strive for. My mission is to realize these values through my work and lifestyle, and to help more people find their own mission and values.
 
-## 联系我
+## Contact Me
 
-如果您有任何问题或建议，请随时与我联系。您可以通过以下方式找到我：
+If you have any questions or suggestions, please feel free to contact me. You can find me in the following ways:
 
-- 电子邮件：[您的电子邮件地址]
-- 社交媒体：[您的社交媒体账号]
+- Email: huangning2023@gmail.com
 
-感谢您访问我的网站！
+Thank you for visiting my website!
