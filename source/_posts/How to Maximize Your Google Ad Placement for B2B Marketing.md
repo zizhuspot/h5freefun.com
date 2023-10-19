@@ -1,5 +1,5 @@
 ---
-title:  How to Maximize Your Google Ad Placement for B2B Marketing
+title: How to Maximize Your Google Ad Placement for B2B Marketing
 date: 2023-10-18 10:28:00
 categories:
   - e-commerce

@@ -1,5 +1,5 @@
 ---
-title:  基于 Kotlin 协程的 Android 并发编程指南
+title: 基于 Kotlin 协程的 Android 并发编程指南
 date: 2023-10-17 10:28:00
 categories:
   - 教程指南
