@@ -27,22 +27,27 @@ When working with files in Java, it is crucial to ensure that file streams are p
 In this scenario, the file stream is not closed using the close() method, which can lead to resource leaks. To prevent this, it is recommended to use the try-with-resources statement, which automatically closes the file stream after it is no longer needed.
 
 
+```java
 try (FileInputStream fis = new FileInputStream("file.txt")) {
-    // Perform file stream operations
+    // 执行文件输入流操作
 } catch (IOException e) {
-    // Handle exceptions
+    // 处理异常
 }
+```
 
 ### Scenario 2: Failure to Close BufferedReader or BufferedWriter
 
 Similarly, when using buffered readers or writers, it is important to close the stream using the close() method to avoid resource leaks. The try-with-resources statement can also be used in this scenario.
 
-
+```java
 try (BufferedReader reader = new BufferedReader(new FileReader("file.txt"))) {
-    // Perform buffered stream operations
+    // 执行缓冲读取器操作
+    // ...
 } catch (IOException e) {
-    // Handle exceptions
+    // 处理异常
+    // ...
 }
+```
 
 ## Database Connection Resource Leaks
 
@@ -53,7 +58,7 @@ Improper handling of database connections can lead to resource leaks and perform
 
 If the close() method is not explicitly called on a database connection, it can result in resource leaks and the exhaustion of database connection pool resources. To prevent this, it is recommended to use the try-with-resources statement to automatically close the connection after it is no longer needed.
 
-
+```java
 try (Connection conn = DriverManager.getConnection(url, username, password);
      Statement stmt = conn.createStatement();
      ResultSet rs = stmt.executeQuery(sql)) {
@@ -61,19 +66,19 @@ try (Connection conn = DriverManager.getConnection(url, username, password);
 } catch (SQLException e) {
     // Handle exceptions
 }
-
+```
 ### Scenario 2: Failure to Return Connection to the Connection Pool
 
 When using connection pooling libraries like Apache Commons DBCP, it is important to return the connection to the pool after it has been used. Failure to do so can result in resource leaks and the exhaustion of connection pool resources.
 
-
+```java
 // Example using Apache Commons DBCP
 try (Connection conn = dataSource.getConnection()) {
     // Perform database operations
 } catch (SQLException e) {
     // Handle exceptions
 }
-
+```
 ## Network Connection Resource Leaks
 
 In Java, improper handling of network connections can lead to resource leaks and network resource exhaustion. Here are two common scenarios and their solutions:
@@ -83,18 +88,19 @@ In Java, improper handling of network connections can lead to resource leaks and
 
 If the close() method is not explicitly called on a socket, it can result in resource leaks and the occupation of network resources. To prevent this, it is recommended to use the try-with-resources statement to automatically close the socket after it is no longer needed.
 
-
+```java
 try (Socket socket = new Socket("host", port)) {
     // Perform network communication operations
 } catch (IOException e) {
     // Handle exceptions
 }
+```
 
 ### Scenario 2: Failure to Close ServerSocket
 
 When implementing server applications, it is important to close the ServerSocket after accepting client connections. Failure to do so can result in resource leaks and the occupation of network resources.
 
-
+```java
 try (ServerSocket serverSocket = new ServerSocket(port)) {
     while (true) {
         Socket socket = serverSocket.accept();
@@ -103,7 +109,7 @@ try (ServerSocket serverSocket = new ServerSocket(port)) {
 } catch (IOException e) {
     // Handle exceptions
 }
-
+```
 ## Preventing Resource Leaks
 
 To avoid resource leaks in Java applications, it is important to adopt good coding practices and ensure that resources are always explicitly closed after use. Here are some strategies to prevent resource leaks:
